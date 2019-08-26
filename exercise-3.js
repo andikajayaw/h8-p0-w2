@@ -1,4 +1,4 @@
-var nama = 'Danang';
+var nama = 'Andika';
 var peran = '';
 
 if (nama === '') {
