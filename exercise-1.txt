@@ -1,0 +1,166 @@
+Pseudocode Challange
+
+1. Newton Second Law
+
+Bunyi hukum II Newton adalah:
+Percepatan sebuah benda akan sebanding dengan gaya yang diberikan pada benda dan berbanding terbalik dengan massa benda. Arah percepatan benda sama dengan arah gaya total yang diberikan pada benda.
+
+Secara matematis hukum II Newton dirumuskan sebagai berikut: ΣF = m x a
+
+ΣF = resultan gaya (Newton)
+m = massa benda (kg)
+a = percepatan benda (m/s2)
+
+Berdasarkan keterangan di atas, buatlah sebuah algoritma / pseudocode untuk menghitung resultan gaya pada sebuah mobil yang memiliki massa benda 600 kg dan ketika didorong oleh tiga orang percepatannya adalah 2 m/s2!
+
+*****ALGORITMA BAHASA MANUSIA*****
+
+Diketahui: 
+
+- newton = m*a
+- m = 600
+- a = 2
+
+Ditanya: 
+Menghitung resultan gaya (Newton) pada sebuah mobil yang memiliki massa benda 600 kg dan ketika didorong oleh tiga orang percepatannya adalah 2 m/s2!
+
+Jadi Gaya Newton yang dihasilkan adalah: 
+- newton = m * a
+-        = 600 * 2
+-        = 1200 Newton
+
+Jadi gaya Newton yang dihasilkan dari 3 orang mendorong mobil 600kg dengan percepatan 2m/s2 adalah 1200(ΣF) Newton.
+
+***********************************
+
+*****PSEUDOCODE*****
+
+START
+    STORE `m` with 600
+    STORE `a` with 2
+
+    STORE `newton` with CALCULATE m * a 
+
+    DISPLAY `newton`
+END
+
+*********************
+
+2. Tahun Kabisat 
+
+Apa yang kamu ketahui tentang tanggal 29 Februari? Kamu pasti tahu jika suatu tahun memiliki tanggal 29 Februari berarti tahun tersebut merupakan tahun kabisat.
+
+Dalam kalender Gregorian, tahun kabisat memiliki beberapa kriteria yaitu antara lain:
+
+Jika tahun habis di bagi 4 dan tidak habis di bagi 100, atau
+Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
+
+*****ALGORITMA BAHASA MANUSIA*****
+
+Diketahui: 
+Tahun kabisat memiliki 2 kritetia perhitungan yaitu: 
+- Jika tahun habis di bagi 4 dan tidak habis di bagi 100
+- Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
+
+Ditanya: 
+menentukan apakah suatu tahun merupakan tahun kabisat atau bukan!
+
+// Contoh menggunakan tahun 2019
+
+- Jika tahun 2019 habis dibagi 4 dan tahun 2019 tidak habis dibagi 100, maka bisa dikategorikan Tahun Kabisat
+- Jika tahun 2019 habis dibagi 100 dan tahun 2019 habis dibagi 400, maka bisa dikategorikan Tahun kabisat
+
+Tetapi berdasarkan perhitungan diatas bahwa tahun 2019 bukan Tahun Kabisat karena tidak memenuhi kriteria diatas.
+
+***********************************
+
+*****PSEUDOCODE*****
+
+START
+    STORE `tahun` to any number
+
+    IF `tahun` MOD 4 EQUALS 0 AND `tahun` MOD 100 NOT EQUALS 0 OR `tahun` MOD 100 EQUALS 0 AND `tahun` MOD 400 EQUALS 0 THEN
+        DISPLAY 'Tahun Kabisat'
+    ELSE 
+        DISPLAY 'Bukan Tahun Kabisat'
+    END IF
+END
+
+*********************
+
+START
+    STORE `tahun` to any number
+        IF `tahun` MOD 4 EQUALS 0 AND `tahun` MOD 100 NOT EQUALS 0 THEN
+            DISPLAY 'Tahun Kabisat'
+        ELSE IF `tahun` MOD 100 EQUALS 10 AND `tahun` MOD 400 EQUALS 0 THEN
+            DISPLAY 'Tahun Kabisat'
+        ELSE
+            DISPLAY 'Bukan Tahun Kabisat'
+        END IF
+END
+
+*********************
+
+3. Laundry Day
+Foxie akan mencuci pakaiannya menggunakan mesin cuci. Pakaian yang akan dicuci oleh Foxie sebanyak 20 dan akan dimasukkan ke mesin cuci. Mesin cuci akan dinyalakan jika semua pakaian Foxie sudah masuk ke mesin cuci.
+
+
+*****ALGORITMA BAHASA MANUSIA*****
+
+Diketahui: 
+Pakaian yang akan dicuci oleh Foxie adalah 20. Dan mesin akan dimulai jika semua pakaian Foxie sudah masuk semua ke mesin cuci.
+
+Ditanya:
+Bantu Foxie untuk menghitung jumlah pakaian dengan Looping.
+
+***********************************
+
+*****PSEUDOCODE*****
+
+START
+    STORE `baju` with 0
+    
+    WHILE `baju` <= 20
+    IF `baju` EQUALS 20 THEN
+        DISPLAY "Mulai mencuci"
+    ELSE 
+       DISPLAY "Belum semua baju masuk ke mesin cuci"
+    END IF
+    ADD `baju` by 1
+END
+
+*********************
+
+4. Periksa Kuku
+
+Seorang guru akan memeriksa kuku siswa-siswinya yang sebanyak 40 orang dengan cara berkeliling kelas. Jika guru menemukan siswa/siswi yang memiliki kuku yang panjang maka guru akan menghukum siswa/siswi tersebut, jika tidak guru akan memuji siswa/siswi tersebut.
+
+
+*****ALGORITMA BAHASA MANUSIA*****
+
+Diketahui: 
+Siswa sebanyak 40. 
+
+Ditanya:
+Mencari murid yang berkuku panjang dan berkuku pendek.
+
+***********************************
+
+*****PSEUDOCODE*****
+
+Saya berasumsi menggunakan boolean values yaitu: true or false
+
+START
+    STORE `murid` with 0
+    STORE `kukuPanjang` with any boolean values
+
+    WHILE murid <= 40
+    IF `kukuPanjang` EQUALS true THEN
+        DISPLAY 'Dihukum'
+    ELSE 
+        DISPLAY 'Dipuji'
+    END IF
+    ADD `murid` by 1
+END
+
+*********************
