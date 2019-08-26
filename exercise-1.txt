@@ -63,7 +63,7 @@ Tahun kabisat memiliki 2 kritetia perhitungan yaitu:
 - Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
 
 Ditanya: 
-menentukan apakah suatu tahun merupakan tahun kabisat atau bukan!
+Menentukan apakah suatu tahun merupakan tahun kabisat atau bukan!
 
 // Contoh menggunakan tahun 2019
 
