@@ -36,7 +36,7 @@ var angkaCounter;
 while (angkaCounter < 100) {
     if (angka % 2 === 0) {
         console.log('GENAP');
-    } else if (angka % 2 !== 0) {
+    } else {
         console.log('GANJIL')
     }
     angkaCounter++;
