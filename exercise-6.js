@@ -58,7 +58,7 @@ for (var angkaCounter3 = 1; angkaCounter3 < 100; angkaCounter3 += 5) {
     }
 }
 
-// Counter 6
+// Counter 9
 
 for (var angkaCounter4 = 1; angkaCounter4 < 100; angkaCounter4 += 9) {
     if (angkaCounter4 % 10 === 0) {
