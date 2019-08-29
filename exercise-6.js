@@ -34,7 +34,7 @@ for (var looping2 = 20; looping2 > 0; looping2--) {
 var angkaCounter;
 
 while (angkaCounter < 100) {
-    if (angka % 2 === 0) {
+    if (angkaCounter % 2 === 0) {
         console.log('GENAP');
     } else {
         console.log('GANJIL')
